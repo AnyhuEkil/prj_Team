@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML mini Project</title>
+        <link rel="stylesheet" href="css/style_proj.css">
+        <meta name="viewport" content="width=device-width, initial scale=1.0">
+    </head>
+    <script>
+        /*
+         WTH...
+        	웹사이트에선 한글안쳐지더니 ... 이클립스에서 쳐지냐 쳐쳐쳐ㅕㄴㅇㅁ네ㅐㅑ여메ㅐㅑㅗㅈ개뱌ㅜㄹ에라이
+        	
+        	패치가멀까
+        	
+        */
+        
+    </script>
+    <body>
+        
+        <!--
+            * 메뉴 아이콘 클릭시 나타나는 태그
+              - id는 script에서 호출 class는 css에서 호출 
+        -->
+        <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">Main</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+        </div>
+
+        <!-- 
+            * 상단 고정 네비게이션
+                - 왼쪽에는 메뉴 아이콘
+                - 오른쪽에는 로그인 아이콘
+        -->
+        <div class="nav col-12">
+            <span class="nav-icon" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+            <span class="nav-sign" style="font-size:30px;cursor:pointer;">&#9786;</span>
+        </div>        
+
+        <div class="row">
+            <div class="col-3 menu" name="myframe">
+                <ul>
+                    <li><a href="https://www.w3schools.com" target="myframe">Main</a> </li>
+                    <li>About</li>
+                    <li>Contact</li>
+                </ul>
+                <br /><br /><br /><br />
+                <br /><br /><br /><br />
+                <br /><br /><br /><br />
+                <br /><br /><br /><br />
+                <br /><br /><br /><br />
+                <br /><br /><br /><br />
+                <br /><br /><br /><br />
+                <br /><br /><br /><br />
+                
+            </div>
+            <div class="col-3 menu-background">
+            </div>
+            <!--
+            <div class="col-9 main">
+                <h1>HTML MINI PROJECT</h1>
+                <p>1주차(3/16) - 설계 - 프로젝트 개요, 업무분장, 일정계획표</p>
+                <p>2주차(3/24) - 개발진행 - 계획대비 진행현황 진행 source, 요구사항정의서</p>
+                <p>3주차(3/29) - 개발, test, 문서작업 - 프로젝트 최종발표 자료</p>
+                <br /><br /><br /><br />
+                <br /><br /><br /><br />
+                <br /><br /><br /><br />
+                <br /><br /><br /><br />
+                <br /><br /><br /><br />
+                <br /><br /><br /><br />
+                <br /><br /><br /><br />
+                <br /><br /><br /><br />
+            </div>
+            -->
+            <iframe class="col-9 main" name="myframe" src="main.html">
+            </iframe>
+        </div>
+        
+        <div class="footer">
+            <p>Team CTO &copy; 2017</p>
+        </div>
+
+        <script>
+            function openNav() {
+                document.getElementById("mySidenav").style.width = "250px";
+            }
+
+            function closeNav() {
+                document.getElementById("mySidenav").style.width = "0";
+            }
+        </script>
+    </body>
+</html>
